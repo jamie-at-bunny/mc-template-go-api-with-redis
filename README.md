@@ -73,10 +73,3 @@ The workflow automatically deploys to Magic Containers on every push to `main`. 
 
 - **Variable** `APP_ID` - your Magic Containers app ID
 - **Secret** `BUNNYNET_API_KEY` - your bunny.net API key
-
-## Learn more
-
-- [Deploy with GitHub Actions](https://docs.bunny.net/magic-containers/deploy-with-github-actions)
-- [Deploy](https://docs.bunny.net/magic-containers/deploy)
-- [Environment Variables](https://docs.bunny.net/magic-containers/environment-variables)
-- [Persistent Volumes](https://docs.bunny.net/magic-containers/persistent-volumes)
