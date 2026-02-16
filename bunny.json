@@ -11,8 +11,8 @@
       "imageTag": "1.25-alpine",
       "environmentVariables": [
         {
-          "key": "REDIS_ADDR",
-          "value": "redis:6379"
+          "key": "REDIS_URL",
+          "value": "redis://localhost:6379"
         }
       ],
       "volumes": [],

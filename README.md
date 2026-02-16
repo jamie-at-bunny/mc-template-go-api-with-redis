@@ -48,7 +48,7 @@ Go to your GitHub profile → **Packages** → select the `mc-template-go-api-wi
 3. Add the **app** container:
    - **Registry**: GitHub Container Registry (`ghcr.io`)
    - **Image**: `ghcr.io/<your-username>/mc-template-go-api-with-redis:latest`
-   - **Environment variable**: `REDIS_ADDR` = `redis:6379`
+   - **Environment variable**: `REDIS_URL` = `redis://localhost:6379`
    - Add an **Endpoint** on port `8080`
 4. Add the **redis** container:
    - **Registry**: Docker Hub
@@ -56,7 +56,7 @@ Go to your GitHub profile → **Packages** → select the `mc-template-go-api-wi
    - Add a **Persistent Volume** mounted at `/data` (this keeps your data across restarts)
 5. Confirm and deploy.
 
-Containers within the same app can reach each other by name - the `app` container connects to `redis:6379` using the `REDIS_ADDR` environment variable.
+Containers within the same app share `localhost`. The `app` container connects to `redis://localhost:6379` using the `REDIS_URL` environment variable.
 
 ### 4. Test it
 
